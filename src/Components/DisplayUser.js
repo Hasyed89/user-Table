@@ -13,6 +13,7 @@ const DisplayUser = () => {
   console.log(data,"[]");
   const deleteUser = (id)=>{
     dispatc(removeUser(id))
+
   }
   return (  
     <>

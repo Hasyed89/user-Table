@@ -5,9 +5,11 @@ import{useDispatch} from 'react-redux';
 import { addUser } from "../Store/slices/UserSlice";
 import DisplayUser from "./DisplayUser";
 const UserDetails = () => {
+  // const [users, setUsers] = useState(JSON.parse(localStorage.getItem('users')) || []);
   const dispatch =useDispatch()
   const addNewUser=(hyd)=>{
     dispatch(addUser(hyd))
+
   }
   return (  
     <>
